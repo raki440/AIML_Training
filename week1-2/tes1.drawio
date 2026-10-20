@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="n4CU41JpB_nIBPtxSDhN">
+    <mxGraphModel dx="762" dy="4447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-2" parent="1" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=16.7;align=center;spacing=0;strokeColor=#unset;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#6bb9f2;strokeWidth=NaN;lucidId=CdAlV_mfXHXi;" value="Input " vertex="1">
+          <mxGeometry height="77" width="70" x="150" y="-2610" as="geometry" />
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-9" edge="1" parent="1" source="pC7j5OxgTSHS_pmN0gXX-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pC7j5OxgTSHS_pmN0gXX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-3" parent="1" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=12;align=center;spacing=0;strokeColor=none;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#01A88D;strokeWidth=1.5;lucidId=0dAlmfX8u.Ay;sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.sagemaker_model;" value="LLM" vertex="1">
+          <mxGeometry height="67" width="59" x="330" y="-2605" as="geometry" />
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-5" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/Foundry_Agent_Service.svg;" value="" vertex="1">
+          <mxGeometry height="68" width="61.08" x="470" y="-2601" as="geometry" />
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-6" parent="1" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user2;fillColor=#fafafa;strokeColor=#005073;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="40" y="-2510" as="geometry" />
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-7" edge="1" parent="1" source="pC7j5OxgTSHS_pmN0gXX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.364;entryDx=0;entryDy=0;entryPerimeter=0;" target="pC7j5OxgTSHS_pmN0gXX-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="-2582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pC7j5OxgTSHS_pmN0gXX-8" edge="1" parent="1" source="pC7j5OxgTSHS_pmN0gXX-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.016;entryY=0.441;entryDx=0;entryDy=0;entryPerimeter=0;" target="pC7j5OxgTSHS_pmN0gXX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-5" edge="1" parent="1" source="H8hkuqIhTgB1uYeNDkSr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="H8hkuqIhTgB1uYeNDkSr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Basic OF MLOPS&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="280" x="30" y="-3840" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-6" edge="1" parent="1" source="H8hkuqIhTgB1uYeNDkSr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="H8hkuqIhTgB1uYeNDkSr-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Machine learning algortihms ---&amp;gt; MLOPs&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="280" x="30" y="-3660" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Code basic and python basics, numpy and pandas, systmes integrations and operations&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="280" x="30" y="-3460" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Real time use case&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="280" x="60" y="-3280" as="geometry" />
+        </mxCell>
+        <mxCell id="H8hkuqIhTgB1uYeNDkSr-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Python handson with ML liraries&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="280" x="50" y="-3110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
