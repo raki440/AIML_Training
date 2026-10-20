@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="ToY3ih1oZQ3UE9D3vt6s">
+    <mxGraphModel dx="934" dy="694" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JVwRJlnPW53jV54kj-r5-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="App&amp;nbsp;" vertex="1">
+          <mxGeometry height="96" width="96" x="110" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-3" edge="1" parent="1" source="JVwRJlnPW53jV54kj-r5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dev&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="298" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="Operations" vertex="1">
+          <mxGeometry height="80" width="80" x="533" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-5" edge="1" parent="1" source="JVwRJlnPW53jV54kj-r5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.037;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" target="JVwRJlnPW53jV54kj-r5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-9" edge="1" parent="1" source="JVwRJlnPW53jV54kj-r5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JVwRJlnPW53jV54kj-r5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="ML/Model&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="80" x="118" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-7" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Data&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="80" x="271" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-12" edge="1" parent="1" source="JVwRJlnPW53jV54kj-r5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JVwRJlnPW53jV54kj-r5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-13" connectable="0" parent="JVwRJlnPW53jV54kj-r5-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Model Deployment&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="0.2231" y="-3" as="geometry">
+            <mxPoint y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-8" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="MLOPs&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="424" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-10" edge="1" parent="1" source="JVwRJlnPW53jV54kj-r5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" target="JVwRJlnPW53jV54kj-r5-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Real time systems" vertex="1">
+          <mxGeometry height="80" width="120" x="655" y="289" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-14" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Data. --&amp;gt;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Data engineering (getting raw data, cleaning data, processing data and tranforming data(Gold layer&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)(Data Pipelines)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Machine learning or Data scientist ----&amp;gt; Model---&amp;gt; Model Artifacts&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Model Artifacts ----&amp;gt; Real time systems (MLOPs)(ML Pipelines)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Infrastructure (DevOPs)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="240" x="118" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Scikit Learn (M1) ---&amp;gt; Accuracy (90%)(model degraded&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-----&amp;gt; train on new data ----&amp;gt; m2&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;M1 ---&amp;gt; Cloudserver ---&amp;gt; M11(Model serving)&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;M11 ----&amp;gt; unseen data ---&amp;gt; Results or predictions or inference&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="156" width="374" x="110" y="703" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="1) customer&lt;div&gt;2) app now&lt;/div&gt;&lt;div&gt;3) irr&lt;/div&gt;&lt;div&gt;4) reapyment sche&lt;/div&gt;&lt;div&gt;5) emi&lt;/div&gt;&lt;div&gt;6) prepay-opt&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;7) loan invoice&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="271" width="271" x="344" y="984" as="geometry" />
+        </mxCell>
+        <mxCell id="JVwRJlnPW53jV54kj-r5-18" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="ML + Data scientist(Data + Model ) + MLOps" vertex="1">
+          <mxGeometry height="105" width="105" x="214" y="1492" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

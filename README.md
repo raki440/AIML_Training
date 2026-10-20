@@ -1,2 +1,1 @@
-# training
-AI-ML training materials 
+# AI-ML training materials 
