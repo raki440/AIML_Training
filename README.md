@@ -6,7 +6,6 @@
 A 16-week intensive coaching program that takes freshers from ML and MLOps fundamentals to production deployment. The curriculum bridges the gap between machine learning and software engineering.
 
 ---
-
 ## Table of contents
 
 - [Learning outcomes](#learning-outcomes)
