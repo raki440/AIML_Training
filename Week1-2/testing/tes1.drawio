@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="n4CU41JpB_nIBPtxSDhN">
-    <mxGraphModel dx="762" dy="4447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+    <mxGraphModel dx="1833" dy="5391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -49,6 +49,9 @@
         </mxCell>
         <mxCell id="H8hkuqIhTgB1uYeNDkSr-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Python handson with ML liraries&amp;nbsp;" vertex="1">
           <mxGeometry height="120" width="280" x="50" y="-3110" as="geometry" />
+        </mxCell>
+        <mxCell id="NU0CSw3y_UR1MxTbDS_4-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=none;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="90" width="420" x="-110" y="-1960" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

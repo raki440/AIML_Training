@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from mlkit import cleaning, features, validation
 from mlkit.config import DATA_PROCESSED, DATA_RAW, SEED
 from mlkit.data_io import read_table, write_table
@@ -44,6 +45,6 @@ def run(input_path, output_path):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", default=DATA_RAW / "customers.csv")
-    ap.add_argument("--output", default=DATA_PROCESSED / "customers.parquet")
+    ap.add_argument("--output", default=DATA_PROCESSED / "customers1.csv")
     args = ap.parse_args()
     run(args.input, args.output)
