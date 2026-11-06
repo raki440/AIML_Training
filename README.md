@@ -175,3 +175,4 @@ Graduates can pursue roles such as:
 - Industry case studies
 - Weekly live Q&A sessions
 - Mentorship from professionals
+- Doubt resolving
