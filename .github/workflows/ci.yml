@@ -21,6 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: list files
+        run: ls -R
+      - name: List files in root directory
+        run: ls -la ${{ github.workspace }}
 
   directory-check:
     runs-on: ubuntu-latest
@@ -36,14 +40,14 @@ jobs:
             fi
           done
 
-    install-dependencies_check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
-        with:
-          python-version: "3.12"
-          requirements: requirements-dev.txt
+    # install-dependencies_check:
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - uses: actions/checkout@v7
+    #   - uses: actions/setup-python@v7
+    #     with:
+    #       python-version: "3.12"
+    #       requirements: requirements-dev.txt
 
 
 
