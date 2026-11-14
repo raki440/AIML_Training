@@ -1,13 +1,11 @@
 name: Build_ML_model
 
 on:
-  # pull_request:
-  push: # branches: [main]
+  push:
     branches: [feature/*, main, release/*]
   workflow_dispatch:
-      environment:
-        name: development
-        
+    environment:
+      name: development
 
 permissions:
   contents: read
@@ -21,32 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: list files
-        run: ls -R
-      - name: List files in root directory
-        run: ls -la ${{ github.workspace }}
-
-
-  install-dependencies_check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/setup-python@v7
-        with:
-          python-version: "3.11"
-          requirements: "Week9-10/files/ml_cicd_project/requirements-de.txt"
-
+      - name: List files in project directory
+        run: ls -la Week9-10/files/ml_cicd_project
 
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Week9-10/files/ml_cicd_project
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
-          cache-dependency-path: "requirements*.txt"
-          requirements: "Week9-10/files/ml_cicd_project/requirements-de.txt"
-      - run: pip install -r Week9-10/files/ml_cicd_project/requirements-dev.txt
+          cache-dependency-path: "Week9-10/files/ml_cicd_project/requirements*.txt"
+      - run: pip install -r requirements-dev.txt
       # - run: ruff check .
       # - run: ruff format --check .
 
@@ -65,27 +53,29 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-          cache-dependency-path: "requirements*.txt"
-          
-      - run: pip install -r Week9-10/files/ml_cicd_project/requirements-dev.txt
+          cache-dependency-path: "Week9-10/files/ml_cicd_project/requirements*.txt"
+      - run: pip install -r requirements-dev.txt
       - run: python -m pytest --cov --cov-report=term-missing --cov-report=xml --cov-fail-under=80
       - uses: actions/upload-artifact@v7
         if: matrix.python-version == '3.11'
         with:
           name: coverage-report
-          path: coverage.xml
+          path: Week9-10/files/ml_cicd_project/coverage.xml
 
   # model-check:
   #   needs: lint
   #   runs-on: ubuntu-latest
+  #   defaults:
+  #     run:
+  #       working-directory: Week9-10/files/ml_cicd_project
   #   steps:
   #     - uses: actions/checkout@v7
   #     - uses: actions/setup-python@v7
   #       with:
   #         python-version: "3.11"
   #         cache: pip
-  #         cache-dependency-path: "requirements*.txt"
-  #     - run: pip install -r Week9-10/files/ml_cicd_project/requirements.txt
+  #         cache-dependency-path: "Week9-10/files/ml_cicd_project/requirements*.txt"
+  #     - run: pip install -r requirements.txt
   #     - name: Train the model
   #       run: python -m src.train
   #     - name: Quality gate (minimum AUC)
@@ -93,4 +83,4 @@ jobs:
   #     - uses: actions/upload-artifact@v7
   #       with:
   #         name: model
-  #         path: models/
+  #         path: Week9-10/files/ml_cicd_project/models/
