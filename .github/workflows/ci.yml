@@ -40,7 +40,8 @@ jobs:
   #           fi
   #         done
 
-    install-dependencies_check:
+  install-dependencies_check:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v7
         with:
