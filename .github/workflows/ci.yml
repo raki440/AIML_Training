@@ -62,25 +62,25 @@ jobs:
           name: coverage-report
           path: Week9-10/files/ml_cicd_project/coverage.xml
 
-  # model-check:
-  #   needs: lint
-  #   runs-on: ubuntu-latest
-  #   defaults:
-  #     run:
-  #       working-directory: Week9-10/files/ml_cicd_project
-  #   steps:
-  #     - uses: actions/checkout@v7
-  #     - uses: actions/setup-python@v7
-  #       with:
-  #         python-version: "3.11"
-  #         cache: pip
-  #         cache-dependency-path: "Week9-10/files/ml_cicd_project/requirements*.txt"
-  #     - run: pip install -r requirements.txt
-  #     - name: Train the model
-  #       run: python -m src.train
-  #     - name: Quality gate (minimum AUC)
-  #       run: python scripts/check_metrics.py --min-auc 0.75
-  #     - uses: actions/upload-artifact@v7
-  #       with:
-  #         name: model
-  #         path: Week9-10/files/ml_cicd_project/models/
+  model-check:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Week9-10/files/ml_cicd_project
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: "Week9-10/files/ml_cicd_project/requirements*.txt"
+      - run: pip install -r requirements.txt
+      - name: Train the model
+        run: python -m src.train
+      - name: Quality gate (minimum AUC)
+        run: python scripts/check_metrics.py --min-auc 0.75
+      - uses: actions/upload-artifact@v7
+        with:
+          name: model
+          path: Week9-10/files/ml_cicd_project/models/
