@@ -26,29 +26,28 @@ jobs:
       - name: List files in root directory
         run: ls -la ${{ github.workspace }}
 
-  directory-check:
+  # directory-check:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v7
+  #     - name: Check for required directories
+  #       run: |
+  #         required_dirs=("data" "models" "src")
+  #         for dir in "${required_dirs[@]}"; do
+  #           if [ ! -d "$dir" ]; then
+  #             echo "Error: Required directory '$dir' is missing."
+  #             exit 1
+  #           fi
+  #         done
+
+    install-dependencies_check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Check for required directories
-        run: |
-          required_dirs=("data" "models" "src")
-          for dir in "${required_dirs[@]}"; do
-            if [ ! -d "$dir" ]; then
-              echo "Error: Required directory '$dir' is missing."
-              exit 1
-            fi
-          done
-
-    # install-dependencies_check:
-    # runs-on: ubuntu-latest
-    # steps:
-    #   - uses: actions/checkout@v7
-    #   - uses: actions/setup-python@v7
-    #     with:
-    #       python-version: "3.12"
-    #       requirements: requirements-dev.txt
-
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          requirements: "Week9-10/files/ml_cicd_project/requirements-de.txt"
 
 
   # lint:
