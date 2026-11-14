@@ -1,0 +1,31 @@
+
+services:
+  train:
+    build: .
+    image: churn-app:1.0
+    command: ["python", "-m", "src.train"]
+    environment:
+      - SEED=42
+    volumes:
+      - models:/app/models
+
+  predict:
+    build: .
+    image: churn-app:1.0
+    command: ["python", "-m", "src.predict"]
+    volumes:
+      - models:/app/models
+    depends_on:
+      train:
+        condition: service_completed_successfully
+
+  monitor:
+    build: .
+    image: churn-app:1.0
+    command: ["python", "-c", "print('Churn model monitoring service is running')"]
+    depends_on:
+      train:
+        condition: service_completed_successfully
+
+volumes:
+  models:
