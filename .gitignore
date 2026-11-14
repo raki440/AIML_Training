@@ -6,6 +6,7 @@ __pycache__/
 */data/*
 ml.drawio
 ml.drawio/*
+.vscode
 
 # C extensions
 *.so

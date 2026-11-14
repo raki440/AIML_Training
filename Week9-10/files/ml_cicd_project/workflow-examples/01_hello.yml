@@ -1,0 +1,15 @@
+# Demo 1: copy this file to .github/workflows/hello.yml, commit and push.
+name: Hello
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: echo "Hello from $GITHUB_REPOSITORY on $GITHUB_REF_NAME"
+      - run: python3 --version
+      - run: ls
