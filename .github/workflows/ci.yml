@@ -46,7 +46,7 @@ jobs:
           cache: pip
           cache-dependency-path: "requirements*.txt"
           requirements: "Week9-10/files/ml_cicd_project/requirements-de.txt"
-      - run: pip install -r Weel9-10/files/ml_cicd_project/requirements-dev.txt
+      - run: pip install -r Week9-10/files/ml_cicd_project/requirements-dev.txt
       - run: ruff check .
       - run: ruff format --check .
 
