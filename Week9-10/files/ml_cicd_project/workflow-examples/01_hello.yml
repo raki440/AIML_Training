@@ -3,6 +3,8 @@ name: Hello
 
 on:
   push:
+   filters:
+      branches: [main, feature/*, release/*]
   workflow_dispatch:
 
 jobs:
