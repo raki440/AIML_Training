@@ -27,7 +27,7 @@ def create_app(model_dir=MODEL_DIR) -> FastAPI:
 
     @app.get("/health")
     def health(request: Request):
-        return {"status": "ok", "model_version": request.app.state.service.version}
+        return {"status": "Running", "model_version": request.app.state.service.version}
 
     app.include_router(v1.router)
     app.include_router(v2.router)

@@ -50,7 +50,7 @@ def make_data(n: int = 3000, seed: int = SEED) -> pd.DataFrame:
     return df
 
 
-def train(model_dir=MODEL_DIR, seed: int = SEED) -> dict:
+def train(model_dir=MODEL_DIR, seed: int = SEED, model_version: str = "1.0.0") -> dict:
     df = add_features(make_data(seed=seed))
     X, y = df[NUMERIC + CATEGORICAL], df["churn"]
     X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2, stratify=y, random_state=seed)
@@ -72,7 +72,7 @@ def train(model_dir=MODEL_DIR, seed: int = SEED) -> dict:
     metrics = {"auc": round(auc, 3), "rows": len(df), "saved_to": str(model_dir / MODEL_FILE)}
     (model_dir / METRICS_FILE).write_text(json.dumps(metrics, indent=2))
     metadata = {
-        "model_version": os.getenv("MODEL_VERSION", "1.0.0"),
+        "model_version": os.getenv("MODEL_VERSION", model_version),
         "trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "sklearn_version": sklearn.__version__,
         "features": NUMERIC + CATEGORICAL,
