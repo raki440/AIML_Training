@@ -1,0 +1,43 @@
+﻿
+name: Download_Model
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "homework/**"
+
+permissions:
+  contents: read
+
+jobs:
+  download-model:
+    name: Download Trained Model
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Week9-10/files/ml_cicd_project
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Train model
+        run: python -m src.train
+
+      - name: Download model
+        run: |
+          python -m src.download --source models/churn_model.joblib --destination downloads
+          echo "Model downloaded successfully"
+
+      - name: Verify downloaded model
+        run: ls -lh downloads/

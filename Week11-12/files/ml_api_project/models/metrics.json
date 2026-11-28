@@ -1,0 +1,5 @@
+{
+  "auc": 0.782,
+  "rows": 3000,
+  "saved_to": "models\\churn_model.joblib"
+}

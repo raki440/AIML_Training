@@ -1,0 +1,14 @@
+{
+  "model_version": "1.0.0",
+  "trained_at": "2026-11-28T12:12:29+00:00",
+  "sklearn_version": "1.9.1",
+  "features": [
+    "tenure_months",
+    "monthly_charges",
+    "logins_per_week",
+    "support_tickets",
+    "tickets_per_month",
+    "plan"
+  ],
+  "auc": 0.782
+}

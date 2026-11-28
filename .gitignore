@@ -2,6 +2,12 @@
 __pycache__/
 *.py[codz]
 *$py.class
+.venv
+*/data/*
+ml.drawio
+ml.drawio/*
+.vscode
+*/.pytest_cache
 
 # C extensions
 *.so
